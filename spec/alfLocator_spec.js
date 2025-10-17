@@ -6,7 +6,7 @@ describe('alfLocator', function () {
 	});
 
 	it("return spaceship lost forever with input of an empty string", function () {
-		expect(locator.findSpaceship("")).toEqual("Spaceship lost forever");
+		expect(locator.findSpaceship("")).toEqual("Spaceship lost forever.");
 	});
 
 	it("return 0,0 when string is just 'X'", function () {
