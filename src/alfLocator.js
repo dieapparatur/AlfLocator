@@ -1,6 +1,5 @@
 function alfLocator() { }
 
-const map = "..........\n..........\n..........\n.......X..\n..........\n..........\n";
 
 alfLocator.prototype.findSpaceship = function (map) {
   if (map === "") {
@@ -11,6 +10,7 @@ alfLocator.prototype.findSpaceship = function (map) {
     return "[0,0]"
   }
 
+  
   let rows = map.split("\n"); //converts the string into an array for each new line
   let height = rows.length;
 
@@ -24,4 +24,5 @@ alfLocator.prototype.findSpaceship = function (map) {
     }
   }
 
+  return "Spaceship lost forever."
 };
